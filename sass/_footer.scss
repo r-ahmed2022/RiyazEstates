@@ -1,0 +1,18 @@
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    align-items: center;
+    .company_logo {
+            width: 10rem;
+        }
+     .company_text {
+         font-family: $font-display;
+         font-size: 1.8rem;
+         color: $color-primary;
+     }
+   
+}

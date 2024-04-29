@@ -1,0 +1,100 @@
+.header {
+    background-image: linear-gradient(rgba($color-secondary, .95), rgba($color-secondary, .95)), 
+    url("../img/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-column: full-start / col-end 6;
+    display: grid;
+    grid-template: 1fr min-content minmax(6rem, min-content) 1fr / minmax(min-content, max-content) ;
+    grid-row-gap: 1.5rem;
+    padding: 3rem 2rem 5rem 4rem;
+    justify-content: center;
+    align-content: center;
+
+    &_logo {
+        justify-self: center;
+        height: 12rem;
+        @media (max-width:$bp-xs) {
+            align-self: center;
+         }
+    }
+
+    &_seen {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        justify-items: start;
+        align-items: center;
+        color: $color-grey-light-1;
+        filter: brightness(70%);
+        font-size: 1.7rem;
+        margin: 1rem 0;
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            width: 95%;
+            display: block;
+            background-color: currentColor;
+        }
+
+        &::after {
+            justify-self: end;
+        }
+       
+    }
+
+    &_text {
+        justify-self: start;
+        font-size: 1.8rem;
+        color: $color-primary;
+        text-transform: uppercase;
+        @media (max-width:$bp-xs) {
+             justify-self: center;
+          }
+    }
+     &_title {
+        justify-self: start;
+        color: #fff;
+        @media (max-width:$bp-xs) {
+            justify-self: center;
+         }
+       
+     }
+    .btn_header {
+        justify-self: start;
+        align-self: start;
+        @media (max-width:$bp-xs) {
+            justify-self: center;
+       }
+    }
+  .sponsor {
+    margin-bottom: 1rem;
+     display: grid;
+     grid-template-columns: repeat(4, minmax(20rem, min-content));
+     grid-column-gap: 3rem;
+     justify-items: center;
+     align-items: center;
+    img {
+        max-height: 2.5rem;
+        max-width: 100%;
+        filter: brightness(70%)
+    }
+    @media (max-width:$bp-xs) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+        justify-self: center;
+        align-items: center;
+        img {
+            max-height: 2rem;
+            max-width: 70%;
+            filter: brightness(70%)
+        }
+     }
+  }
+
+  @media (max-width:$bp-l) {
+    grid-column: 1 / -1;
+  }
+
+
+}
