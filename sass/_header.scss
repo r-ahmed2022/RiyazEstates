@@ -89,6 +89,7 @@
             max-width: 70%;
             filter: brightness(70%)
         }
+      
      }
   }
 
@@ -96,5 +97,6 @@
     grid-column: 1 / -1;
   }
 
-
+  @media (max-width: $bp-sm) {
+}
 }

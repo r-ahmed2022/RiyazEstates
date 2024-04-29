@@ -44,6 +44,9 @@ body {
     color: #aaa; }
   .heading-1__dark {
     color: #54483A; }
+  @media (max-width: 31.5em) {
+    .heading-1 {
+      font-size: 3rem; } }
 
 .heading-2 {
   font-size: 4rem;

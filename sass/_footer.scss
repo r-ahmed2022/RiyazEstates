@@ -14,5 +14,6 @@
          font-size: 1.8rem;
          color: $color-primary;
      }
-   
+   @media(max-width: $bp-xs) {
+   }
 }
